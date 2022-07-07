@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,14 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
-  constructor() { }
-  imagen  ="assets/viajes/santorini.jpg";
-  categoria= "paquete";
-  titulo ="hola mundo";
-  contenido= "loren blah";
-  destacado= true;
-  precio= 56787;
+//@input () indica que este dato se va a recibir desde el componente padre
+//podemos declarar un valor predeterminado usando el =  
+// la | es un or ,, seria que la categoria puede recibir un string o no puede recibir nada
+constructor() { }
+  @Input() imagen?  ="assets/viajes/santorini.jpg";
+  @Input() categoria: string | undefined;
+  @Input() titulo : string | undefined;
+  @Input() contenido:string | undefined;
+  @Input() destacado= true;
+  @Input() precio: Number | undefined;
+  numeros = [45,64,23,54,89,55,];
 
   ngOnInit(): void {
   }

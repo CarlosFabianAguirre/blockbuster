@@ -1,13 +1,32 @@
 <div class="card">
-    <img class="card-img" src="{{imagen}}" alt="">
+    <img class="card-img" src="{{ imagen }}" alt="">
     <div class="card-info">
-        <h2>{{categoria}}</h2>
-        <h3>{{titulo}}</h3>
+        <div class="card-top">
+            <h2 class="card-info_categoria">{{ categoria }}</h2>
+            <h3 class="card-info_titulo">{{ titulo }}</h3>
 
-        <p>{{contenido}}</p>
-        {{destacado}}
-        <p>${{precio}}<br>
-            incluye impuestos, tasas y cargos
+            <p>{{ contenido }}</p>
+
+            {{ destacado }}
+            <p class ="card-destacado" *ngIf="destacado">
+                oferta inbatible
+            </p>
+            <p class ="card-destacado" *ngIf="!destacado">
+                oferta no es inbatible
+            </p>
+
+            <!-- <ul> -->
+                <!-- <li *ngFor="let numero of numeros"> -->
+                    <!-- este compartimiento tiene el numero: {{numero}} -->
+                <!-- </li> -->
+
+            <!-- </ul> -->
+        
+        </div>
+
+        <p class="card-info_precio">
+            ${{ precio }}<br>
+            Incluye impuestos, tasas y cargos.
         </p>
     </div>
 </div>
