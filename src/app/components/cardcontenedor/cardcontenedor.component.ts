@@ -8,12 +8,52 @@ import { Component, OnInit } from '@angular/core';
 export class CardcontenedorComponent implements OnInit {
 
   constructor() { }
-    imagen="assets/viajes/santorini.jpg"
-    categoria="vuelos"
-    titulo="viaja a australia"
-    contenido="loren ipsun "
-    destacado=true
-    precio=456
+    viajes=[
+      {
+        imagen: "assets/viajes/santorini.jpg",
+        categoria:"vuelos",
+        titulo:"viaja a australia",
+        contenido:"loren ipsun ",
+        destacado:true,
+        precio:456,
+    
+      },
+      {
+        imagen: "assets/viajes/polinesia.jpg",
+        categoria:"vuelos",
+        titulo:"viaja a brasil",
+        contenido:"loren ipsun ",
+        destacado:false,
+        precio:10000,
+    
+      },
+      {
+        imagen: "assets/viajes/cancun.jpg",
+        categoria:"vuelos",
+        titulo:"viaja a cancun",
+        contenido:"loren ipsun ",
+        destacado:true,
+        precio:3
+    
+      },
+      {
+        imagen: "assets/viajes/egipto.jpg",
+        categoria:"vuelos",
+        titulo:"viaja a egipto",
+        contenido:"loren ipsun ",
+        destacado:false,
+        precio:43434
+    
+      }
+    ]
+   
+
+   // imagen="assets/viajes/polinesia.jpg"
+    //categoria="vuelos"
+    //titulo="viaja a polinesia"
+    //contenido="loren ipsun "
+    //destacado=true
+   // precio=78787
     
 
 

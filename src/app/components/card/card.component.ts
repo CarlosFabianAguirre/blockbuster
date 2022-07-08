@@ -14,7 +14,7 @@ constructor() { }
   @Input() categoria: string | undefined;
   @Input() titulo : string | undefined;
   @Input() contenido:string | undefined;
-  @Input() destacado= true;
+  @Input() destacado?= true;
   @Input() precio: Number | undefined;
   numeros = [45,64,23,54,89,55,];
 
