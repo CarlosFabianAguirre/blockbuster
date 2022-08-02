@@ -2,21 +2,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    };
+    box-sizing: border-box}
+
+    
+    
+
     :root {
     --blanco: #fff;
     --negro: #000;
     --gris:#333;
-    --naranja: #f90;
-    --violeta: purple;
+    --amarillo: #f90;
+    --rojo: rgb(234, 15, 15);
 
     }
 
-    body{
+    body{ 
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     img{
         width:100%;
     }
+    .font {font-family: 'Rubik Moonrocks', cursive;}

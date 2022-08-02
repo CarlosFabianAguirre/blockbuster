@@ -1,21 +1,34 @@
+h1{ color:red;
+background-color: black;
+font-size: 70px ;
+
+padding-bottom: 2%;
+text-align: center;}
 .lista {
     list-style-type: none;
-    background-color: var(--violeta);
+    background-color: var(--negro);
     display: flex;
+    font-size: 180%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 40px;
+    
 
     &-item {
     flex-grow: 1;
+    border: 2px solid white;
     
     &_link {
         display: block;
-        padding: 8px 0;
+        padding: 4px 0;
         text-align: center;
         font-weight: bold;
-        color: var(--blanco);
+        color: var(--rojo);
         text-decoration: none;
+        
 
         &:hover {
-            text-decoration: underline;
+            color: rgb(255, 247, 0);
         }
     }
 }
