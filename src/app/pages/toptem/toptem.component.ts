@@ -9,53 +9,46 @@ export class ToptemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-  imgCollection: Array<object> = [
+  ngOnInit(): void {}
+  topTen = [
     {
       image: '/assets/rock/misfits.jpg',
-      thumbImage: '/assets/rock/misfits.jpg',
-      alt: 'imagen Misfits',
-      title: 'Misfits',
+      alt: 'Misfits puesto 1',
+      title: 'Misfits puesto 1',
     }, {
       image: '/assets/rock/motorhead.jpg',
-      thumbImage: "/assets/rock/motorhead.jpg",
-      title: 'Motorhead',
-      alt: 'imagen Motorhead'
+      title: 'Motorhead puesto 2',
+      alt: 'Motorhead puesto 2',
     }, {
       image: '/assets/rock/davidbowie.jpg',
-      thumbImage: '/assets/rock/davidbowie.jpg',
-      title: 'Davidbowie',
-      alt: 'imagen davidbowie'
+      title:'davidbowie puesto 3',
+      alt: 'davidbwie puesto 3',
     }, {
       image: '/assets/rock/ramones.jpg',
-      thumbImage: '/assets/rock/ramones.jpg',
-      title: 'Ramones',
-      alt: 'Imagen ramones'
+      title: 'Ramones puesto 4',
+      alt: 'Ramones puesto 4'
     }, {
       image: '/assets/rock/pulsion.jpg',
-      thumbImage: '/assets/rock/pulsion.jpg',
-      title: 'Pulsion',
-      alt: 'Image 5'
+      title: 'Pulsion puesto 5',
+      alt: 'pulsion puesto 5'
     }, {
       image: '/assets/rock/theclash.jpg',
-      thumbImage: '/assets/rock/theclash.jpg',
-      title: 'The Clash',
-      alt: 'imagen the clash'
+      title: 'The Clash puesto 6',
+      alt: 'the Clash puesto 6'
     },  {
       image: '/assets/rock/michael.jpg',
-      thumbImage: '/assets/rock/michael.jpg',
-      title: 'Michael Jackson',
-      alt: 'Imagen Michael Jackson',
+      title: 'Michael Jackson puesto 7',
+      alt: 'Michael Jackson puesto 7',
       
     },  {
-      image: '/assets/rock/michael.jpg',
-      thumbImage: '/assets/rock/kiss.jpg',
-      title: 'Kiss',
-      alt: 'Imagen Kiss'
+      image: '/assets/rock/kiss.jpg',
+      title: 'Kiss puesto 8',
+      alt: 'Kiss puesto 8'
     }
 ];
 
 }
+
+
 
 

@@ -6,7 +6,7 @@ import { PublicatumusicaComponent } from './pages/publicatumusica/publicatumusic
 import { ToptemComponent } from './pages/toptem/toptem.component';
 
 const routes: Routes = [
-  {path:"inicio",component:InicioComponent},
+  {path:"",component:InicioComponent},
   {path:"buscar",component:BuscarComponent},
   {path:"toptem",component:ToptemComponent},
   {path:"publicatumusica",component:PublicatumusicaComponent},
