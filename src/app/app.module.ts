@@ -13,6 +13,8 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { ToptemComponent } from './pages/toptem/toptem.component';
 import { PublicatumusicaComponent } from './pages/publicatumusica/publicatumusica.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ToptemhijoComponent } from './components/toptemhijo/toptemhijo.component';
+import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SliderComponent } from './components/slider/slider.component';
     ToptemComponent,
     PublicatumusicaComponent,
     SliderComponent,
+    ToptemhijoComponent,
+    ToptemhijitoComponent,
     
   ],
   imports: [
