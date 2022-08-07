@@ -16,6 +16,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ToptemhijoComponent } from './components/toptemhijo/toptemhijo.component';
 import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.co
     SliderComponent,
     ToptemhijoComponent,
     ToptemhijitoComponent,
+    
     
   ],
   imports: [
