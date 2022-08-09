@@ -15,6 +15,10 @@ import { PublicatumusicaComponent } from './pages/publicatumusica/publicatumusic
 import { SliderComponent } from './components/slider/slider.component';
 import { ToptemhijoComponent } from './components/toptemhijo/toptemhijo.component';
 import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.component';
+import { MoviesComponent } from './components/movies/movies.component';
+import { CardMovieComponent } from './components/card-movie/card-movie.component';
+
+
 
 
 @NgModule({
@@ -28,6 +32,10 @@ import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.co
     SliderComponent,
     ToptemhijoComponent,
     ToptemhijitoComponent,
+    MoviesComponent,
+    CardMovieComponent,
+    
+    
     
     
   ],
@@ -36,6 +44,8 @@ import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.co
     AppRoutingModule,
     HttpClientModule,
     NgImageSliderModule,
+    
+
     
   ],
   providers: [],
