@@ -1,0 +1,71 @@
+<h1>Contact form</h1>
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+        <div class="name">
+            <label for="name" class="form-label">Nombre artista</label>
+            <input type="text" class="form-control" id="name" name="name" required formControlName="name">
+            <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']"
+                class="alert alert-danger">campo requerido.
+            </div>
+            <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['minlength']"
+                class="alert alert-danger">Name must be longer than
+                {{ contactForm.get('name')?.errors?.['minlength']?.requiredLength}} characters.
+            </div>
+        </div>
+
+    <div class="enlace">
+        <label for="enlace" class="form-label">carga el enlace de tu video </label>
+        <input type="text" class="form-control" id="enlace" name="enlace" required formControlName="enlace">
+        <div *ngIf="contactForm.get('enlace')?.touched && contactForm.get('enlace')?.errors?.['required']"
+            class="alert alert-danger">campo requerido.
+        </div>
+        <div *ngIf="contactForm.get('enlace')?.touched && contactForm.get('enlace')?.errors?.['minlength']"
+            class="alert alert-danger">Enlace must be longer than
+            {{ contactForm.get('enlace')?.errors?.['minlength']?.requiredLength}} characters.
+        </div>
+    </div>
+
+            <div class="genero">
+                    <label for="genero" class="form-label">genero</label>
+                    <select name="genero" id="genero" class="elegir genero" formControlName="genero">
+                        <option selected>selecciona el genero </option>
+                        <option value="punk">punk</option>
+                        <option value="rock">rock</option>
+                        <option value="heavy">heavy</option>
+                        <option value="pop">pop</option>
+                        <option value="melodico">melodico</option>
+                        <option value="jazz">jazz</option>
+                        <option value="arabe">arabe</option>
+                        <option value="instrumental">instrumental</option>
+                        <option value="otro">otro</option>
+                        
+                    </select>
+                </div>
+
+            <div class="descripcion">
+                    <label for="descripcion" class="form-label">descripcion</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" rows="4" placeholder="cuentanos sobre tu obra"
+                    formControlName="descripcion" required></textarea>
+                    <div *ngIf="contactForm.get('descripcion')?.touched && contactForm.get('descripcion')?.errors?.['required']"
+                        class="alert alert-danger">campo requerido.
+                    </div>
+             </div>
+            <div class="email">
+                    <label for="email" class="form-label">email</label>
+                    <textarea class="form-control" name="email" id="email" placeholder="musicexplore@hotmail.com"
+                    formControlName="email" required></textarea>
+                    <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']"
+                        class="alert alert-danger">campo requerido.
+                    </div>
+                </div>  
+                <div class="password">
+                    <label for="password" class="form-label">password</label>
+                    <textarea class="form-control" name="password" id="password" placeholder="incluye letras y numeros"
+                    formControlName="password" required></textarea>
+                    <div *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.errors?.['required']"
+                        class="alert alert-danger">campo requerido.
+                    </div>
+                </div>      
+        <div class="boton">
+                <button type="submit" class="btn btn-info btn-lg">Enviar</button>
+        </div>
+</form>

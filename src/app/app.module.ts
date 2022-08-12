@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule} from 'ng-image-slider';
-
-
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+
+
+
+import { FormComponent } from './components/form/form.component';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
@@ -17,6 +20,7 @@ import { ToptemhijoComponent } from './components/toptemhijo/toptemhijo.componen
 import { ToptemhijitoComponent } from './components/toptemhijito/toptemhijito.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { CardMovieComponent } from './components/card-movie/card-movie.component';
+
 
 
 
@@ -34,6 +38,7 @@ import { CardMovieComponent } from './components/card-movie/card-movie.component
     ToptemhijitoComponent,
     MoviesComponent,
     CardMovieComponent,
+    FormComponent,
     
     
     
@@ -44,11 +49,11 @@ import { CardMovieComponent } from './components/card-movie/card-movie.component
     AppRoutingModule,
     HttpClientModule,
     NgImageSliderModule,
-    
-
+    FormsModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+})  
 export class AppModule { }
