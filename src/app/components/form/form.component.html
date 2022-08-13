@@ -1,5 +1,5 @@
 <h1>COMPLETA EL FORMULARIO</h1>
-<form name="contacto" netlify  (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+<form  (ngSubmit)="onSubmit()" [formGroup]="contactForm">
         <div class="name">
             <label for="name" class="form-label">Nombre artista</label>
             <input type="text" class="form-control" id="name" name="name" required formControlName="name">
