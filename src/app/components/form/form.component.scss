@@ -1,0 +1,28 @@
+h1{ color: red;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+}
+
+form {
+    position : relative;
+    width  : 900px;
+    height : 250px;
+    margin : 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: black;
+    color:red;
+  
+    /* creamos nuestra malla (grid) */
+    display  : grid;
+    grid-gap : 1px;
+    grid-template-columns : repeat(4, 1fr);
+    grid-template-rows    : 10em 1em 1em 1em;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }

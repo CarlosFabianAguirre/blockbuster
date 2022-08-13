@@ -1,5 +1,5 @@
-<h1>Contact form</h1>
-<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+<h1>COMPLETA EL FORMULARIO</h1>
+<form name="contacto" netlify  (ngSubmit)="onSubmit()" [formGroup]="contactForm">
         <div class="name">
             <label for="name" class="form-label">Nombre artista</label>
             <input type="text" class="form-control" id="name" name="name" required formControlName="name">
@@ -13,7 +13,7 @@
         </div>
 
     <div class="enlace">
-        <label for="enlace" class="form-label">carga el enlace de tu video </label>
+        <label for="enlace" class="form-label">Carga el enlace de tu video </label>
         <input type="text" class="form-control" id="enlace" name="enlace" required formControlName="enlace">
         <div *ngIf="contactForm.get('enlace')?.touched && contactForm.get('enlace')?.errors?.['required']"
             class="alert alert-danger">campo requerido.
@@ -25,7 +25,7 @@
     </div>
 
             <div class="genero">
-                    <label for="genero" class="form-label">genero</label>
+                    <label for="genero" class="form-label">Genero</label>
                     <select name="genero" id="genero" class="elegir genero" formControlName="genero">
                         <option selected>selecciona el genero </option>
                         <option value="punk">punk</option>
@@ -42,7 +42,7 @@
                 </div>
 
             <div class="descripcion">
-                    <label for="descripcion" class="form-label">descripcion</label>
+                    <label for="descripcion" class="form-label">Descripcion</label>
                     <textarea class="form-control" name="descripcion" id="descripcion" rows="4" placeholder="cuentanos sobre tu obra"
                     formControlName="descripcion" required></textarea>
                     <div *ngIf="contactForm.get('descripcion')?.touched && contactForm.get('descripcion')?.errors?.['required']"
@@ -50,7 +50,7 @@
                     </div>
              </div>
             <div class="email">
-                    <label for="email" class="form-label">email</label>
+                    <label for="email" class="form-label">Email</label>
                     <textarea class="form-control" name="email" id="email" placeholder="musicexplore@hotmail.com"
                     formControlName="email" required></textarea>
                     <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['required']"
@@ -58,10 +58,10 @@
                     </div>
                 </div>  
                 <div class="password">
-                    <label for="password" class="form-label">password</label>
+                    <label for="password" class="form-label">Password</label>
                     <textarea class="form-control" name="password" id="password" placeholder="incluye letras y numeros"
                     formControlName="password" required></textarea>
-                    <div *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.errors?.['required']"
+                    <div *ngIf="contactForm.get('password')?.touched && contactForm.get('password')?.errors?.['required']"
                         class="alert alert-danger">campo requerido.
                     </div>
                 </div>      
