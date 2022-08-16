@@ -9,7 +9,7 @@ pautas opcionales
 16.sitio en netlify
 17. sitio en angular 
 
-pd:comence con hacer el proyecto fullstack ,, pero al final tuve un problema con las tablas,se me creaba una tabla de mas, no lo pude solucionar, luego encare por angular solo y armaba el proyecto repase y lo hice junto a usted con los videos y no me tomaba el scss del correspondiente componente, asi que no sabia que hacer ya tuve que  agarrar un proyecto de los hechos, lo reutilice y pude encarar, calculo que si ahora armo un proyecto nuevo por ahi pueda darme cuenta si habia alguna falla, despues tampoco me cargaba en netlify la pagina me tiro error de compilacion distinto de 0 jaja que por suerte crei que estaba en el horno casi se me caen un par de lagrimas pero lo pude solucionar y por ultimo la pagina notfound que la solucion ya la tenian los chicos en el grupo, fue todo una aventura, =)
+pd:comence con hacer el proyecto fullstack ,, pero al final tuve un problema con las tablas,se me creaba una tabla de mas, no lo pude solucionar, luego encare por angular solo y armaba el proyecto repase y lo hice junto a usted con los videos y no me tomaba el scss del correspondiente componente, asi que no sabia que hacer ya, tuve que  agarrar un proyecto de los hechos, lo reutilice y pude encarar, calculo que si ahora armo un proyecto nuevo por ahi pueda darme cuenta si habia alguna falla, despues tampoco me cargaba en netlify la pagina, me tiro error de compilacion distinto de 0 jaja, crei que estaba en el horno, casi se me caen un par de lagrimas pero lo pude solucionar y por ultimo la pagina notfound que la solucion ya la tenian los chicos en el grupo, fue todo una aventura, =)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
